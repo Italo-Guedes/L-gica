@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha(){
+
+	document.write("<br");
+}
+
+function mostra(frase){
+
+	document.write(frase);
+	pulaLinha();
+}
+
+var chegadaPortugueses = 1500;
+var anoAtual = 2021;
+var anosDecorridos = anoAtual - chegadaPortugueses;
+var geracoes = anosDecorridos/28;
+
+mostra("O número de gerações desde a chegada dos portuguedes é: " + Math.round(geracoes));
+
+</script>

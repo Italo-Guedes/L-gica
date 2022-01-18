@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+
+    var segredo = Math.round(Math.random() *10);
+    var input = document.querySelector("input");
+    input.focus();
+    function verifica(){
+
+        if(input.value == segredo){
+
+            alert("Você acertou!");
+        }else{
+
+            alert("Você errou!!!");
+        }
+
+        input.value = ""; //após digitar o valor e pefir pra e dar o ok no alert o campo input recebe valor vazio.
+        input.focus(); //Após limpar o valor o curso volta a piscar para o usuário digitar.
+    }
+   
+   var button = document.querySelector("button");
+   button.onclick = verifica;       //Ao clicar no botão (button.onclick) a funcão verifica é chamada, se houvesse parêntes a função seria executada logo no início do programa, por isso deixa sem os ().
+
+</script>
